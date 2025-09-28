@@ -1,0 +1,163 @@
+/* ===== IMPORT TAILWIND ===== */
+@import "tailwindcss";
+
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+  line-height: 1.6;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  @apply bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-200 sticky top-0 z-50 transition-colors duration-300;
+}
+nav h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  @apply text-blue-900;
+}
+nav a {
+  @apply font-medium text-gray-700 transition-colors duration-300;
+}
+nav a:hover {
+  @apply text-amber-600;
+}
+
+/* ===== BUTTONS ===== */
+button, .btn {
+  @apply inline-block font-semibold rounded-lg px-5 py-2 transition-all duration-300 shadow-sm;
+}
+.btn-primary {
+  @apply bg-blue-900 text-white;
+}
+.btn-primary:hover {
+  @apply bg-blue-800 shadow-md;
+}
+.btn-secondary {
+  @apply bg-amber-600 text-white;
+}
+.btn-secondary:hover {
+  @apply bg-amber-700 shadow-md;
+}
+.btn-neutral {
+  @apply bg-gray-200 text-gray-800;
+}
+.btn-neutral:hover {
+  @apply bg-gray-300;
+}
+
+/* ===== CARDS ===== */
+.card {
+  @apply bg-white rounded-xl shadow-md p-6 border border-gray-200 transition-transform duration-300;
+}
+.card:hover {
+  @apply -translate-y-1 shadow-lg;
+}
+
+/* ===== TITLES ===== */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+h1 {
+  font-size: 2rem;
+  color: #1e3a8a;
+}
+h2 {
+  font-size: 1.5rem;
+  color: #d97706;
+}
+h3 {
+  font-size: 1.25rem;
+  color: #374151;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  @apply mt-12 text-center text-sm text-gray-500;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== DARK MODE ===== */
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.dark nav {
+  @apply bg-gray-800 border-gray-700 shadow-md;
+}
+.dark nav h1 {
+  @apply text-blue-400;
+}
+.dark nav a {
+  @apply text-gray-300;
+}
+.dark nav a:hover {
+  @apply text-amber-400;
+}
+
+.dark .btn-primary {
+  @apply bg-blue-600 text-white;
+}
+.dark .btn-primary:hover {
+  @apply bg-blue-500;
+}
+.dark .btn-secondary {
+  @apply bg-amber-500 text-white;
+}
+.dark .btn-secondary:hover {
+  @apply bg-amber-400;
+}
+.dark .btn-neutral {
+  @apply bg-gray-700 text-gray-200;
+}
+.dark .btn-neutral:hover {
+  @apply bg-gray-600;
+}
+
+.dark .card {
+  @apply bg-gray-800 border-gray-700 shadow-lg;
+}
+
+.dark h1 {
+  @apply text-blue-400;
+}
+.dark h2 {
+  @apply text-amber-400;
+}
+.dark h3 {
+  @apply text-gray-200;
+}
+
+.dark footer {
+  @apply text-gray-400;
+}
