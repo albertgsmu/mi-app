@@ -1,16 +1,25 @@
-# React + Vite
+# 🍽️ Mi Restaurante
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web hecha con **React + Vite + TailwindCSS** para la gestión de pedidos en un restaurante.  
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías usadas
+- [React](https://react.dev/) – Librería para la interfaz de usuario.  
+- [Vite](https://vitejs.dev/) – Empaquetador rápido y ligero.  
+- [TailwindCSS](https://tailwindcss.com/) – Estilos modernos y responsivos.  
+- [React Router](https://reactrouter.com/) – Navegación entre páginas.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Funcionalidades
+- Página de inicio con acceso de **clientes**.  
+- Acceso oculto para **cocina** y **administrador** mediante contraseña.  
+- Sistema de pedidos desde la vista del cliente.  
+- Interfaz limpia y optimizada para móvil y escritorio.  
 
-## React Compiler
+## ⚙️ Instalación y ejecución local
+Clona el repositorio y ejecuta:  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/albertgsmu/mi-app.git
+cd mi-app
+npm install
+npm run dev
+    
